@@ -6,18 +6,30 @@ import { useState } from "react";
 
 const Navbar = () => {
     const [menuOpen, setMenuOpen] = useState(false);
+    const [animando, setAnimando] = useState(false);
     const isMobile = useIsMobile();
 
     const mobileClass = isMobile ? "mobile" : "web";
-    const transition = menuOpen ? "div-entrada" : "div-entrada";
+    const transition = !animando ? "div-entrada" : "div-salida";
 
-    const toggleMenu = () => {
-
+    const cerrar = () => {
+        setAnimando(true); // activa clase de salida
+        setTimeout(() => {
+            setMenuOpen(false); // oculta el div después de la animación
+            setAnimando(false); // reinicia animación
+        }, 500); // mismo tiempo que la animación
+    };
+    const abrir = () => {
         if (isMobile) {
-
-            setMenuOpen(!menuOpen);
+            setMenuOpen(!menuOpen)
         }
     };
+
+    const toggleMenu = menuOpen ? cerrar : abrir;
+
+
+
+
     return <div className={`navbar-container ${mobileClass}`}>
         <div className="main-title">
             rivillarta
