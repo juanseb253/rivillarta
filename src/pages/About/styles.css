@@ -1,0 +1,64 @@
+.rivillarta-png {
+    width: 100%;
+    height: auto;
+}
+.first-info {
+    display: flex;
+    gap: 5%;
+}
+
+.first-info h1 {
+    font-size: 4.75rem;
+    font-weight: 400;
+    margin: 0;
+}
+.info-container {
+    padding: 96px;
+}
+p {
+    font-size:  1.2rem;
+    line-height: 1.7rem;
+}
+.img-container {
+    display: flex;
+    align-items: center;
+    max-width: 624px;
+}
+.second-info {
+    display: flex;
+    gap: 5%;
+}
+.second-info h3 {
+    font-size: 2.75rem;
+    font-weight: 400;
+    margin: 0;
+}
+section {
+    margin-bottom: 64px;
+}
+.text-container {
+    display: flex;
+    align-items: center;
+}
+@media (max-width:1500px) {
+    .first-info {
+        flex-direction: column;
+        align-items: center;
+        gap: 45px;
+    }
+    .first-info h1 {
+        font-size: 3rem
+    }
+    .info-container {
+        padding: 96px 10%;
+    }
+
+    .second-info {
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 45px;
+    }
+    .second-info h1 {
+        font-size: 1.5rem
+    }
+}

@@ -1,0 +1,24 @@
+.footer-container {
+    background-color: rgba(235, 209, 50, 0.74);
+}
+.contact-info { 
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 54px 0;
+    gap: 20px;
+}
+.contact-info h4 {
+    font-size: 2.68rem;
+    margin: 0;
+}
+.button-icon-container {
+    display: flex;;
+    gap: 40px;
+}
+.rights-reserved {
+    padding: 1.5rem;
+    background-color: rgb(235, 209, 50);
+    display: flex;
+    justify-content: center;
+}

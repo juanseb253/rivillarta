@@ -1,0 +1,28 @@
+.contact-us{
+    padding: 96px 25%;
+    background-color: #F5ED91;
+    text-align: center;
+}
+.contact-us h2 {
+    font-size: 48px;
+    font-weight: 600;
+}
+.contact-us div {
+    margin-bottom: 60px;
+}
+.enviar-button {
+    padding: 18px 27px;
+    border-radius: 50px;
+    font-size: 18px;
+    font-family: raleway;
+    background-color: #F5ED91;
+    border: none;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 10px;
+}
+@media (max-width:768px) {
+    .contact-us {
+        padding: 96px 5%
+    }
+}
