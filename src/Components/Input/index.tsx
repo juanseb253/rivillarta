@@ -1,7 +1,19 @@
+import type { Dispatch, SetStateAction } from "react";
 import "./styles.css"
 
-const Input = ({ label, state, setState, error, setError, type = "text", corErr = false, setCorErr = () => { } }) => {
-    const handleChange = (e) => {
+type Props = {
+    label: string;
+    state: string;
+    setState: Dispatch<SetStateAction<string>>;
+    error: boolean;
+    setError: Dispatch<SetStateAction<boolean>>;
+    type?: string;
+    corErr?: boolean;
+    setCorErr?: Dispatch<SetStateAction<boolean>>
+}
+
+const Input: React.FC<Props> = ({ label, state, setState, error, setError, type = "text", corErr = false, setCorErr = () => { } }) => {
+    const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         setError(false)
         setState(e.target.value)
         if (corErr) {

@@ -1,5 +1,9 @@
+import type { ReactNode } from "react";
 import "./styles.css"
-const Card = ({ children }) => (
+type Props = {
+    children: ReactNode;
+};
+const Card: React.FC<Props> = ({ children }) => (
     <div className="card">{children}</div>
 )
 export default Card;
