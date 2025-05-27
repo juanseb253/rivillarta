@@ -89,4 +89,7 @@ max-width: 60%;
     .prot-normal {
         flex-direction: column !important;
     }
+    .img-cont-two {
+        max-width: 100%;
+    }
 }
