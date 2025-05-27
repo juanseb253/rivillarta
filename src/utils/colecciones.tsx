@@ -1,6 +1,7 @@
 import colectionOne from "../assets/coleccion1-prot1.png"
 import colectionTwo from "../assets/colec3-prot1.png"
 import CollectionOne from "../pages/CollectionOne";
+import CollectionTwo from "../pages/CollectionTwo";
 const colections = [
     {
         id: "1",
@@ -12,7 +13,7 @@ const colections = [
         id: "3",
         name: "Colección 2",
         image: colectionTwo,
-        page: <div></div>
+        page: <CollectionTwo />
     }
 ]
 
