@@ -46,10 +46,10 @@ const Navbar = () => {
         {!isMobile && <nav className="web-nav">
             <ul>
                 <li>
-                    <Link to="/">home</Link>
+                    <Link to="/">colecciones</Link>
                 </li>
                 <li>
-                    <Link to="/gallery">galeria</Link>
+                    <Link to="/products">productos</Link>
                 </li>
                 <li>
                     <Link to="/contact">contactanos</Link>
@@ -64,16 +64,16 @@ const Navbar = () => {
                 <nav>
                     <ul>
                         <li>
-                            <Link to="/" onClick={toggleMenu} >home</Link>
+                            <Link to="/" onClick={toggleMenu}>colecciones</Link>
                         </li>
                         <li>
-                            <Link to="/gallery" onClick={toggleMenu}>galeria</Link>
+                            <Link to="/products" onClick={toggleMenu}>productos</Link>
                         </li>
                         <li>
                             <Link to="/contact" onClick={toggleMenu}>contactanos</Link>
                         </li>
                         <li>
-                            <Link to="/about" onClick={toggleMenu}>acerca de mi</Link>
+                            <Link to="/about" onClick={toggleMenu}>acerca de</Link>
                         </li>
                     </ul>
                 </nav></div>)}

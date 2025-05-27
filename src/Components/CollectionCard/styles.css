@@ -1,0 +1,15 @@
+.product-container {
+    max-width: 330px;
+    
+}
+.product-image-container {
+    display: flex;
+    width: 248px;
+    height: 310px;
+}
+
+.product-image-container img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
